@@ -1,0 +1,72 @@
+.ta-center {
+    text-align: center;
+}
+
+.tt-uppercase {
+    text-transform: uppercase;
+}
+
+.color-white {
+    color: white;
+}
+
+.color-gray {
+    color: $main-gray;
+}
+
+.mb0 {
+    margin-bottom: 0;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+
+    @include media(w1024) {
+        margin-bottom: 10px;
+    }
+}
+
+.mb40 {
+    margin-bottom: 40px;
+
+    @include media(w1024) {
+        margin-bottom: 30px;
+    }
+
+    @include media(w768) {
+        margin-bottom: 20px;
+    }
+}
+
+.light {
+    font-weight: 300;
+}
+
+.medium {
+    font-weight: 500;
+}
+.tablet-show {
+
+    @include media(w1024) {
+        display: block;
+    }
+}
+.tablet-hide {
+
+    @include media(w1024) {
+        display: none;
+    }
+}
+.mobile-show {
+
+    @include media(w768) {
+        display: block;
+    }
+}
+.mobile-hide {
+    display: none;
+
+    @include media(w768) {
+        display: none;
+    }
+}

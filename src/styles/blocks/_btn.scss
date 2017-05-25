@@ -1,0 +1,154 @@
+button {
+    white-space: nowrap;
+
+    &.btn-round {
+        outline: none;
+    }
+}
+
+a {
+
+    &.btn-round {
+        display: inline-flex;
+        align-items: center;
+    }
+}
+
+.btn-round {
+    background-color: $main-yellow;
+    border-radius: 40px;
+    border: none;
+    border-bottom: 3px solid #9a7a08;
+    display: inline-block;
+    cursor: pointer;
+    color: #4c3b01;
+    font-size: 27px;
+    text-align: center;
+    text-decoration: none;
+    padding: 3px 35px 0;
+    height: 80px;
+
+    &:hover {
+        animation: btnAnimYellow 0.8s 0s ease-out 1;
+    }
+
+    @include media (w1024) {
+        border-radius: 22px;
+        font-size: 14px;
+        height: 44px;
+    }
+
+    @include media (w768) {
+        border-radius: 18px;
+        font-size: 15px;
+        padding: 0 20px;
+        height: 36px;
+    }
+
+    &_black {
+        background-color: black;
+        border-bottom: 3px solid #9a7a08 !important;
+        color: white;
+
+        &:hover {
+            animation: btnAnimBlack 0.8s 0s ease-out 1;
+        }
+    }
+
+    &_white {
+        background-color: white;
+        border-bottom: none !important;
+        color: black;
+
+        &:hover {
+            animation: btnAnimWhite 0.8s 0s ease-out 1;
+        }
+    }
+
+    &_download {
+        background-image: url("../img/arrow-btn-download.png");
+        background-position: right 35px center;
+        background-repeat: no-repeat;
+        background-size: 29px;
+        padding-right: 80px;
+        position: relative;
+
+        &:after {
+            content: "PDF, 15Mb";
+            color: white;
+            font-size: 30px;
+            font-weight: 300;
+            position: absolute;
+            left: calc(100% + 20px);
+            white-space: nowrap;
+
+            @include media (w1024) {
+                font-size: 18px;
+            }
+
+            @include media (w768) {
+                content: none;
+            }
+        }
+
+        @include media (w1024) {
+            background-size: 18px;
+            padding-right: 70px;
+        }
+
+        @include media (w768) {
+            background-position: right 20px center;
+            background-size: 14px;
+            padding-right: 50px;
+        }
+    }
+
+    &_download-column {
+        margin-bottom: 50px;
+
+        @include media (w768) {
+            margin-bottom: 30px;
+        }
+
+        &:after {
+            transform: translateX(-50%);
+            position: absolute;
+            left: 50%;
+            top: calc(100% + 10px);
+        }
+    }
+
+    &_clear {
+        
+        &:after {
+            content: none;
+        }
+    }
+}
+
+@keyframes btnAnimYellow {
+    from {
+        box-shadow: 0 0 8px 6px $main-yellow, 0 0 12px 14px $main-yellow;
+    }
+    to {
+        box-shadow: 0 0 18px 6px rgba(254, 214, 0, 0), 0 0 4px 71px rgba(254, 214, 0, 0);
+    }
+}
+
+@keyframes btnAnimBlack {
+    from {
+        box-shadow: 0 0 8px 6px black, 0 0 12px 14px black;
+    }
+    to {
+        box-shadow: 0 0 18px 6px rgba(0, 0, 0, 0), 0 0 4px 71px rgba(0, 0, 0, 0);
+    }
+}
+
+@keyframes btnAnimWhite {
+    from {
+        box-shadow: 0 0 8px 6px white, 0 0 12px 14px white;
+    }
+    to {
+        box-shadow: 0 0 18px 6px rgba(255,255,255, 0), 0 0 4px 71px rgba(255,255,255, 0);
+    }
+}

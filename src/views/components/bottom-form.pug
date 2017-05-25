@@ -1,0 +1,12 @@
+div#bottomFormContainer.bottom-form-container
+    p.text.text_s.bottom-form__title.
+        Проверьте статус вашего города: возможно, мы уже нашли потенциального партнёра
+    form(data-next="#bigForm")#bottomForm.bottom-form
+        label.bottom-form__label
+            input(type="text" name="city" placeholder="Ваш город" required).input
+        label.bottom-form__label
+            input(type="text" name="phone" placeholder="Телефон" required).input
+        label.bottom-form__label
+            input(type="email" name="email" placeholder="E-mail" required).input
+        button.btn-round.btn-round_black.bottom-form__btn.
+            Проверить

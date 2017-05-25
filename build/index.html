@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>Движем Недвижимое</title>
+    <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="styles/vendor.css">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none;"></svg>
+    <div class="form-wrap form-wrap_small">
+      <div class="form-container" id="smallFormContainer">
+        <div class="form__close"></div>
+        <p class="form__heading">Оставьте заявку на презентацию франшизы</p>
+        <form class="form" id="smallForm" data-next="#bigForm">
+          <input class="form__input" type="text" name="name" placeholder="Ваше имя" required="">
+          <input class="form__input" type="text" name="phone" placeholder="Ваш телефон" required="">
+          <input class="form__input" type="email" name="email" placeholder="Ваш email" required="">
+          <button class="btn-round form__btn form__btn_size js-big-btn">Скачать</button>
+        </form>
+      </div>
+    </div>
+    <div class="form-wrap form-wrap_big">
+      <div class="form-container" id="bigFormContainer">
+        <div class="form__close"></div>
+        <p class="form__title">Спасибо!</p>
+        <p class="form__descr">В ближайшее время мы обработаем Вашу заявку. Для того, чтобы наш специалист мог максимально подробно ответить на все Ваши вопросы, заполните, пожалуйста, следующую форму. Заранее благодарим</p>
+        <form class="form" id="bigForm">
+          <input class="js-hidden-name" type="hidden" name="name1">
+          <input class="js-hidden-phone" type="hidden" name="phone1">
+          <input class="js-hidden-phone" type="hidden" name="email1">
+          <label class="form__label"><span>Введите Ваш город</span>
+            <input class="form__input" type="text" name="city" placeholder="" required="">
+          </label>
+          <label class="form__label"><span>Введите Ваш возраст</span>
+            <input class="form__input" type="text" name="age" placeholder="" required="">
+          </label>
+          <label class="form__label"><span>Наличие бизнеса / Опыт бизнеса</span>
+            <select class="form__select" name="business">
+              <option value="yes">Да</option>
+              <option value="no">Нет</option>
+            </select>
+          </label>
+          <label class="form__label"><span>Объем планируемых инвестиций</span>
+            <select class="form__select" name="volume">
+              <option value="100 000 - 250 000">100 000 — 250 000 рублей</option>
+              <option value="250 000 - 500 000">250 000 — 500 000 рублей</option>
+              <option value="500 000 - 750 000">500 000 — 750 000 рублей</option>
+              <option value="750 000 - 1 000 000">750 000 — 1 000 000 рублей</option>
+              <option value="1 000 000 - 1 500 000">1 000 000 — 1 500 000 рублей</option>
+              <option value="1 500 000 - 3 000 000">1 500 000 — 3 000 000 рублей</option>
+              <option value="3 000 000">Более 3 000 000 рублей</option>
+            </select>
+          </label>
+          <button class="btn-round form__btn form__btn_center">Получить предложение</button>
+        </form>
+      </div>
+    </div>
+    <section class="sec sec1">
+      <header class="header">
+        <div class="container header__container">
+          <div class="header__item">
+            <p class="header__text">Бизнес на высокодоходных<br> сделках с большими<br> площадями</p>
+          </div>
+          <div class="header__item header__item_logo"><a class="header__logo" href="/"><img class="header__logo-img" src="img/header-logo.png" alt=""></a></div>
+          <div class="header__item header__item_contacts"><a class="header__link phone phone_white" href="tel:88123097833" data-phone="88123097833">+7 (812) 309-78-33</a><a class="header__link link link_getcall js-small-btn" href="">Заказать звонок</a></div>
+        </div>
+      </header>
+      <div class="container ta-center sec1__container">
+        <p class="text text_x tt-uppercase sec1__heading">Заработайте ОТ 11,2 млн.рублей за год</p>
+        <p class="text text_l tt-uppercase">на сделках с коммерческой недвижимостью</p>
+        <p class="text text_m color-white">Как зарабатывать на коммерческой недвижимости, не приобретая её?</p>
+        <p class="text text_m color-white sec1__text sec1__text_mb">Требуется ли опыт работы с недвижимостью,<br> чтобы запустить этот бизнес?</p>
+        <p class="text text_s color-white">Узнайте ответы в нашей презентации</p><a class="btn-round btn-round_download js-small-btn sec1__btn" href="">Скачать презентацию</a>
+        <ul class="sec1__list">
+          <li class="sec1__list-item"><img src="img/sec1-img1.png"></li>
+          <li class="sec1__list-item"><img src="img/sec1-img2.png"></li>
+          <li class="sec1__list-item"><img src="img/sec1-img3.png"></li>
+          <li class="sec1__list-item"><img src="img/sec1-img4.png"></li>
+          <li class="sec1__list-item"><img src="img/sec1-img5.png"></li>
+          <li class="sec1__list-item"><img src="img/sec1-img6.png"></li>
+          <li class="sec1__list-item"><img src="img/sec1-img7.png"></li>
+        </ul>
+      </div>
+    </section>
+    <section class="sec sec2"><img class="sec2__bg-img" src="img/sec2-bg.png" alt="">
+      <div class="container">
+        <div class="sec2__text-block">
+          <div class="sec2__text-block-item sec2__text-block-item_number">
+            <h2>3</h2>
+          </div>
+          <div class="sec2__text-block-item">
+            <h3 class="tt-uppercase">МЛН.М</h3>
+            <p class="text text_49 tt-uppercase mb0">Коммерческой недвижимости</p>
+            <p class="text text_m sec2__text-border">России сдаётся в аренду и приобретается каждый год</p>
+            <p class="text text_s light sec2__text-pc">Сейчас в РФ на разной стадии строительства находится 3,4 млн. м2 качественных торговых площадей. Российский рынок недвижимости входит в ТОП-5 самых привлекательных в мире.</p>
+          </div>
+        </div>
+        <p class="text text_s light mb20 sec2__text-mobile">Сейчас РФ на разной стадии строительства находится 3,4 млн. м2 качественных торговых площадей. Российский рынок недвижимости входит в ТОП-5 самых привлекательных в мире.</p>
+        <p class="text text_l ta-center mb40">По оценкам экспертов, объём инвестиций в коммерческую<br> недвижимость в 2017 году составит от 3 $ до 4 $ млрд</p>
+        <p class="text text_l ta-center">Рынок нуждается в таких компаниях, как</p><img class="sec2__logo" src="img/header-logo.png" alt="">
+        <p class="text text_s light ta-center">которые берут на себя быструю реализацию Объектов<br> и качественное сопровождение сделок </p>
+      </div>
+    </section>
+    <section class="sec sec3">
+      <div class="sec3__wrap">
+        <div class="container color-white">
+          <div class="sec3__text">
+            <div class="sec3__img-wrap"><img class="sec3__logo" src="img/sec3-logo.png" alt=""></div>
+            <p class="text text_x">«ДвижемНедвижимое.РФ»</p><img class="sec3__logo-mobile" src="img/sec3-logo.png" alt="">
+            <p class="text text_s light">Специалисты по организации <br>и сопровождению сделок с коммерческой <br>недвижимостью</p>
+            <p class="text text_l sec3__text-upper">ЗА 7 ЛЕТ РАБОТЫ</p>
+            <p class="text text_s light">мы добились внушительных показателей:</p>
+            <ul class="sec3__list">
+              <li class="sec3__list-item">
+                <p class="sec3__item-title">30</p>
+                <p class="sec3__item-text">инвестиционных проектов</p>
+              </li>
+              <li class="sec3__list-item">
+                <p class="sec3__item-title">62</p>
+                <p class="sec3__item-text">проекта готового бизнеса</p>
+              </li>
+              <li class="sec3__list-item">
+                <p class="sec3__item-title">50<span class="sec3__item-subtitle sec3__item-subtitle_bottom">тыс.м2</span></p>
+                <p class="sec3__item-text">площадей сдано в аренду</p>
+              </li>
+              <li class="sec3__list-item">
+                <p class="sec3__item-title">150<span class="sec3__item-subtitle sec3__item-subtitle_top">более</span></p>
+                <p class="sec3__item-text">постоянных клиентов</p>
+              </li>
+              <li class="sec3__list-item">
+                <p class="sec3__item-title">10<span class="sec3__item-subtitle sec3__item-subtitle_bottom">млн. р.</span></p>
+                <p class="sec3__item-text">среднегодовая выручка</p>
+              </li>
+              <li class="sec3__list-item">
+                <p class="sec3__item-title"><span class="sec3__item-subtitle sec3__item-subtitle_top">более</span>200<span class="sec3__item-subtitle sec3__item-subtitle_bottom">объектов</span></p>
+                <p class="sec3__item-text">недвижимости выставлено на продажу</p>
+              </li>
+            </ul>
+          </div>
+          <div class="sec3__btn-wrap"><a class="btn-round btn-round_download js-small-btn" href="">Скачать презентацию</a></div>
+        </div>
+      </div>
+    </section>
+    <section class="sec sec4">
+      <div class="sec4__wrap"><img class="sec4__decor" src="img/sec4-decor-bg.png" alt="">
+        <div class="container sec4__container">
+          <p class="text text_xl ta-center tt-uppercase sec4__title">Каждый год мы делаем 10-милионную выручку</p>
+          <p class="text text_m ta-center">на сделках с недвижимостью — и готовы научить этому Вас!</p>
+          <div class="sec4__border-container">
+            <div class="sec4__border">
+              <p class="text text_xxl medium tt-uppercase">Откройте компанию</p><img class="sec4__logo" src="img/header-logo.png" alt="">
+              <div>
+                <p class="text text_s medium tt-uppercase mb0 sec4__border-subtitle">в своём городе</p>
+              </div>
+            </div>
+            <p class="text text_x tt-uppercase medium mb0">заработайте первУЮ прибыль</p>
+            <div class="sec4__bottom-text">
+              <div class="sec4__bottom-text-item">
+                <h4>287</h4>
+                <p class="text text_45 tt-uppercase medium">ТЫС.РУБЛЕЙ</p>
+              </div>
+              <div class="sec4__bottom-text-item">
+                <p class="text text_x tt-uppercase medium mb20">уже на 2-й месяц</p>
+                <p class="text text_m">Мы научим вас выгодно заключать сделки с собственниками недвижимости,</p>
+                <p class="text text_s light">выстраивать дружеские отношения с клиентами и вести бизнес без оглядки на конкурентов</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec sec5">
+      <div class="container color-white">
+        <p class="text text_m ta-center mb40 sec5__title">Для быстрого старта вы получите все необходимое:</p>
+        <ul class="sec5__list">
+          <li class="sec5__list-item">
+            <div class="sec5__list-col sec5__list-col_number">
+              <p class="sec5__list-number medium">1</p>
+            </div>
+            <div class="sec5__list-col sec5__list-col_desc">
+              <p class="text text_s">Пошаговое руководство по запуску бизнеса</p>
+            </div>
+          </li>
+          <li class="sec5__list-item">
+            <div class="sec5__list-col sec5__list-col_number">
+              <p class="sec5__list-number medium">4</p>
+            </div>
+            <div class="sec5__list-col sec5__list-col_desc">
+              <p class="text text_s">Материалы и инструменты для рекламы в онлайне и офлайне</p>
+            </div>
+          </li>
+          <li class="sec5__list-item">
+            <div class="sec5__list-col sec5__list-col_number">
+              <p class="sec5__list-number medium">2</p>
+            </div>
+            <div class="sec5__list-col sec5__list-col_desc">
+              <p class="text text_s">Право использования бренда «ДвижемНедвижимое.РФ»</p>
+            </div>
+          </li>
+          <li class="sec5__list-item">
+            <div class="sec5__list-col sec5__list-col_number">
+              <p class="sec5__list-number medium">5</p>
+            </div>
+            <div class="sec5__list-col sec5__list-col_desc">
+              <p class="text text_s">Базу юридических и бухгалтерских документов</p>
+            </div>
+          </li>
+          <li class="sec5__list-item">
+            <div class="sec5__list-col sec5__list-col_number">
+              <p class="sec5__list-number medium">3</p>
+            </div>
+            <div class="sec5__list-col sec5__list-col_desc">
+              <p class="text text_s">Помощь в поиске, аренде и обустройстве офиса</p>
+            </div>
+          </li>
+          <li class="sec5__list-item">
+            <div class="sec5__list-col sec5__list-col_number">
+              <p class="sec5__list-number medium">6</p>
+            </div>
+            <div class="sec5__list-col sec5__list-col_desc">
+              <p class="text text_s">Инструкции по найму и обучению персонала</p>
+            </div>
+          </li>
+        </ul>
+        <p class="text text_s light ta-center mb40">Все компоненты франшизы подробно описаны в презентации</p>
+        <div class="sec5__btn-wrap"><a class="btn-round btn-round_download js-small-btn" href="">Скачать презентацию</a></div>
+      </div>
+    </section>
+    <section class="sec sec6">
+      <div class="container">
+        <p class="text text_xl ta-center tt-uppercase sec6__title">Уже занимаетесь сделками с недвижимостью?<br> Работаете риелтором?</p>
+        <p class="text text_s ta-center sec6__subtitle">Для вас — индивидуальные условия сотрудничества</p>
+        <div class="sec6__list">
+          <div class="sec6__list-item">
+            <div class="sec6__list-border-wrap">
+              <div class="sec6__list-border"></div>
+            </div>
+            <div class="sec6__list-content"><img class="sec6__list-img" src="img/sec6-img1.png" alt="">
+              <p class="sec6__list-title">«УПРАВЛЯЮЩИЙ ПАРТНЕР»</p>
+              <p class="sec6__list-text">Франшиза для одного агента-одиночки</p>
+            </div>
+          </div>
+          <div class="sec6__list-item">
+            <div class="sec6__list-border-wrap">
+              <div class="sec6__list-border"></div>
+            </div>
+            <div class="sec6__list-content"><img class="sec6__list-img" src="img/sec6-img2.png" alt="">
+              <p class="sec6__list-title">«КОМПАНЬОН»</p>
+              <p class="sec6__list-text">Для тех, кто хочет сопровождать сделки не только с коммерческой недвижимостю</p>
+            </div>
+          </div>
+          <div class="sec6__list-item">
+            <div class="sec6__list-border-wrap">
+              <div class="sec6__list-border"></div>
+            </div>
+            <div class="sec6__list-content"><img class="sec6__list-img" src="img/sec6-img3.png" alt="">
+              <p class="sec6__list-title">«ПАРТНЁР»</p>
+              <p class="sec6__list-text">Предложение для агентств недвижимости</p>
+            </div>
+          </div>
+          <div class="sec6__list-item">
+            <div class="sec6__list-border-wrap">
+              <div class="sec6__list-border"></div>
+            </div>
+            <div class="sec6__list-content"><img class="sec6__list-img" src="img/sec6-img4.png" alt="">
+              <p class="sec6__list-title">«КОМАНДА»</p>
+              <p class="sec6__list-text">Предложение для команды агентов</p>
+            </div>
+          </div>
+          <div class="sec6__list-item">
+            <div class="sec6__list-border-wrap">
+              <div class="sec6__list-border"></div>
+            </div>
+            <div class="sec6__list-content"><img class="sec6__list-img" src="img/sec6-img5.png" alt="">
+              <p class="sec6__list-title">«СТРАТЕГ»</p>
+              <p class="sec6__list-text">Передаём вам исключительные права на регион</p>
+            </div>
+          </div>
+          <div class="sec6__list-item">
+            <div class="sec6__list-border-wrap">
+              <div class="sec6__list-border"></div>
+            </div>
+            <div class="sec6__list-content"><img class="sec6__list-img" src="img/sec6-img6.png" alt="">
+              <p class="sec6__list-title">«ИНВЕСТОР»</p>
+              <p class="sec6__list-text">Для тех, кто хочет выгодно вложить деньги, а работу — оставить нам</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec sec7">
+      <div class="container color-white">
+        <p class="text text_xl ta-center tt-uppercase">Откройте бизнес с нами без «космических» инвестиций</p>
+        <p class="text text_m ta-center sec7__subtitle">Выберите планируемый размер инвестиций</p>
+        <div class="calc sec7__calc">
+          <div class="calc__container">
+            <div class="calc__head">
+              <p class="text text_xs">Количество<br> инвестиций</p><img class="calc__img" src="img/sec6-logo.png" alt=""><img class="calc__img-mobile" src="img/logo.png" alt="">
+            </div>
+            <div class="calc__range-mobile">
+              <div class="calc__range-wrap-mobile">
+                <input class="calc__range-slider-mobile" type="range" min="1" max="6" step="1" value="1" data-orientation="vertical">
+                <div class="calc__range-blocks-wrap-mobile">
+                  <div class="calc__range-blocks-container-mobile">
+                    <div class="calc__range-blocks-mobile">
+                      <div class="calc__range-block-mobile">
+                        <div class="calc__range-block-text-mobile calc__range-block-text-mobile_last">
+                          <p class="text text_s">2 080 000<span class="rouble">Р</span></p>
+                        </div>
+                        <div class="calc__range-block-text-mobile">
+                          <p class="text text_s">1 580 000<span class="rouble">Р</span></p>
+                        </div>
+                      </div>
+                      <div class="calc__range-block-mobile">
+                        <div class="calc__range-block-text-mobile">
+                          <p class="text text_s">1 080 000<span class="rouble">Р</span></p>
+                        </div>
+                      </div>
+                      <div class="calc__range-block-mobile">
+                        <div class="calc__range-block-text-mobile">
+                          <p class="text text_s">880 000<span class="rouble">Р</span></p>
+                        </div>
+                      </div>
+                      <div class="calc__range-block-mobile">
+                        <div class="calc__range-block-text-mobile">
+                          <p class="text text_s">640 000<span class="rouble">Р</span></p>
+                        </div>
+                      </div>
+                      <div class="calc__range-block-mobile">
+                        <div class="calc__range-block-text-mobile">
+                          <p class="text text_s">211 000<span class="rouble">Р</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="calc__range">
+              <div class="calc__range-wrap">
+                <input class="calc__range-slider" type="range" min="1" max="6" step="1" value="1">
+                <div class="calc__range-blocks-wrap">
+                  <div class="calc__range-blocks-container">
+                    <div class="calc__range-blocks">
+                      <div class="calc__range-block">
+                        <div class="calc__range-block-text calc__range-block-text_first">
+                          <p class="text text_s">211 000<span class="rouble">Р</span></p>
+                        </div>
+                        <div class="calc__range-block-text">
+                          <p class="text text_s">640 000<span class="rouble">Р</span></p>
+                        </div>
+                      </div>
+                      <div class="calc__range-block">
+                        <div class="calc__range-block-text">
+                          <p class="text text_s">880 000<span class="rouble">Р</span></p>
+                        </div>
+                      </div>
+                      <div class="calc__range-block">
+                        <div class="calc__range-block-text">
+                          <p class="text text_s">1 080 000<span class="rouble">Р</span></p>
+                        </div>
+                      </div>
+                      <div class="calc__range-block">
+                        <div class="calc__range-block-text">
+                          <p class="text text_s">1 580 000<span class="rouble">Р</span></p>
+                        </div>
+                      </div>
+                      <div class="calc__range-block">
+                        <div class="calc__range-block-text">
+                          <p class="text text_s">2 080 000<span class="rouble">Р</span></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="calc__footer">
+              <div class="calc__footer-item">
+                <p class="text text_s tt-uppercase">«Управляющий партнер»</p>
+                <table class="calc__footer-table">
+                  <tr>
+                    <td class="calc__footer-col">Паушальный взнос:</td>
+                    <td class="calc__footer-col calc__footer-col_bg"><span id="val1">100 000</span><span class="rouble">Р</span></td>
+                  </tr>
+                  <tr>
+                    <td class="calc__footer-col">Затраты на открытие:</td>
+                    <td class="calc__footer-col calc__footer-col calc__footer-col_bg"><span id="val2">100 000</span><span class="rouble">Р</span></td>
+                  </tr>
+                  <tr>
+                    <td class="calc__footer-col">Затраты на рекламу:</td>
+                    <td class="calc__footer-col calc__footer-col calc__footer-col_bg"><span id="val3">100 000</span><span class="rouble">Р</span></td>
+                  </tr>
+                </table>
+              </div>
+              <div class="calc__footer-item">
+                <p class="text text_s light">Средняя прибыль в 1-й год:</p>
+                <div class="calc__footer-border"><span id="val4">1 359 876</span><span class="rouble">Р</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="text text_s ta-center mb0">Используйте наш опыт и окупайте вложения</p>
+        <p class="text text_s light ta-center mb40">уже на пятый месяц работы!</p>
+        <div class="ta-center"><a class="btn-round js-small-btn" href="">Получить расчет инвестиций</a></div>
+      </div>
+    </section>
+    <section class="sec sec8"><img class="sec8__bg-img" src="img/sec8-bg.png" alt="">
+      <div class="container sec8__container">
+        <p class="text text_xl tt-uppercase ta-center mb0">вы готовы выступать в качестве инвестора?</p>
+        <p class="text text_m tt-uppercase ta-center">для вас эксклюзивное предложение</p>
+        <p class="text text_s ta-center color-gray sec8__subtitle">Вы можете не только сопровождать сделки, но и стать<br> источником их финансирования</p>
+        <div class="sec8__border">
+          <div class="sec8__border-item">
+            <div class="sec8__border-item-text">Вы покупаете объект</div>
+          </div>
+          <div class="sec8__border-item">
+            <div class="sec8__border-item-text">Сдаете его в аренду</div>
+          </div>
+          <div class="sec8__border-item">
+            <div class="sec8__border-item-text">получаете доход</div>
+          </div>
+          <div class="sec8__border-item">
+            <div class="sec8__border-item-text">продаете объект со 100% наценкой</div>
+          </div>
+          <div class="sec8__border-item"></div>
+        </div>
+        <div class="sec8__note-wrap">
+          <div class="sec8__note">
+            <p class="text text_s tt-uppercase mb0">получаЕТе двойную прибыль с ПРОДАЖИ</p>
+          </div>
+        </div>
+        <p class="text text_s ta-center tt-uppercase">У нас есть практика ведения подобных сделок<br> и мы готовы поделиться опытом с вами!</p>
+      </div>
+    </section>
+    <section class="sec sec9">
+      <div class="container">
+        <p class="text text_xxl color-white tt-uppercase ta-center">Начните зарабатывать на сделках</p>
+        <p class="text text_m color-white ta-center mb0 light">с недвижимостью для крупнейших сетевых компаний вашего города</p>
+        <p class="text text_m color-white ta-center">от 11,2 млн рублей в год</p><img class="sec9__logo" src="img/sec9-logo.png" alt="">
+        <div class="bottom-form-container" id="bottomFormContainer">
+          <p class="text text_s bottom-form__title">Проверьте статус вашего города: возможно, мы уже нашли потенциального партнёра</p>
+          <form class="bottom-form" data-next="#bigForm" id="bottomForm">
+            <label class="bottom-form__label">
+              <input class="input" type="text" name="city" placeholder="Ваш город" required>
+            </label>
+            <label class="bottom-form__label">
+              <input class="input" type="text" name="phone" placeholder="Телефон" required>
+            </label>
+            <label class="bottom-form__label">
+              <input class="input" type="email" name="email" placeholder="E-mail" required>
+            </label>
+            <button class="btn-round btn-round_black bottom-form__btn">Проверить</button>
+          </form>
+        </div>
+        <p class="text text_m color-white ta-center">Если ваш город свободен — мы перезвоним и сообщим об этом в течение 15 минут после получения заявки</p>
+      </div>
+      <footer class="footer">
+        <div class="container footer__container">
+          <div class="footer__item footer__item_social">
+            <div>© 2017, Компания «ДвижемНедвижимое.РФ»</div><a class="footer__link footer__link_politic-mobile" href="doc/politic.pdf" target="_blank">Политика конфиденциальности</a>
+            <div class="footer__social">
+              <p class="footer__social-title">Мы в социальных сетях: </p>
+              <ul class="footer__social-list">
+                <li class="footer__social-item"><a class="footer__link footer__social-link" href="https://vk.com/club29519436" target="_blank"><i class="fa fa-vk"></i></a></li>
+                <li class="footer__social-item"><a class="footer__link footer__social-link" href="https://www.facebook.com/dn78.ru/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__item footer__item_info">
+            <div class="footer__info">
+              <p>Офис: г. Санкт-Петербург, Проспект Испытателей, д. 30</p><a class="footer__link footer__link_politic" href="doc/politic.pdf" target="_blank">Политика конфиденциальности</a>
+            </div>
+          </div>
+          <div class="footer__item footer__item_contacts">
+            <div class="footer__contacts"><a class="footer__phone footer__link" href="tel:88123097833" data-phone="88123097833">+7 (812) 309-78-33</a><a class="footer__link footer__link_getcall js-small-btn" href="">Заказать звонок</a></div>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <script src="scripts/vendor.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webshim/1.16.0/dev/polyfiller.js"></script>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+.footer {
+	background-color: $footer-bg;
+    font-size: 14px;
+    margin-top: 30px;
+    padding: 35px 0 30px;
+
+    @include media(w768) {
+        padding: 25px 0 20px;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        @include media(w768) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    &__item {
+        font-size: 16px;
+        width: calc(100% / 3);
+
+        @include media(w768) {
+            width: 100%;
+        }
+
+        &_social {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &_info {
+
+            @include media(w768) {
+                order: -2;
+            }
+        }
+
+        &_contacts {
+
+            @include media(w768) {
+                order: -1;
+            }
+        }
+    }
+
+    &__social {
+
+        @include media(w768) {
+            margin-bottom: 5px;
+            order: -1;
+        }
+    }
+
+    &__social-title {
+        display: inline-block;
+        margin-bottom: 4px;
+    }
+
+    &__social-item {
+        display: inline-block;
+        font-size: 18px;
+        margin-right: 4px;
+    }
+
+    &__social-list {
+        display: inline-block;
+    }
+
+    &__info {
+        text-align: center;
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        @include media(w768) {
+            align-items: center;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__link {
+        transition: $trans;
+        color: black;
+        text-decoration: none;
+
+        &:hover {
+            color: rgba(0,0,0,0.8);
+        }
+
+        &_politic {
+            margin-right: 30px;
+            text-decoration: underline;
+
+            @include media(w1024) {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
+            @include media(w768) {
+                margin-bottom: 15px;
+            }
+        }
+
+        &_politic-mobile {
+            display: none;
+        }
+
+        &_getcall {
+            border-bottom: 1px dotted black;
+        }
+    }
+
+    &__phone {
+        font-size: 18px;
+        text-decoration: none;
+
+        @include media(w1024) {
+            font-size: 16px;
+        }
+
+        @include media(w600) {
+            //padding-left: 0;
+        }
+    }
+}

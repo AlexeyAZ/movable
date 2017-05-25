@@ -1,0 +1,24 @@
+.sec7 {
+    @include arrow-down(#273e53, 0px);
+    background-image: url("../img/sec7-bg.jpg");
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    @include media(w1024) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @include media(w768) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    &__subtitle {
+        margin-bottom: 50px;
+    }
+
+    &__calc {
+        margin-bottom: 50px;
+    }
+}

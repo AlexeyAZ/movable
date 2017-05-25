@@ -1,0 +1,118 @@
+.thanks {
+    background-image: url("../img/sec1-bg.jpg");
+    padding-top: 30px;
+    min-height: 100vh;
+    //padding-bottom: 160px;
+
+    @include media(w1024) {
+        //padding-bottom: 200px;
+    }
+
+    &__heading {
+        font-size: 55px;
+        text-align: center;
+        text-transform: uppercase;
+        padding-top: 100px;
+        padding-bottom: 0.4em;
+
+        @include media(w1024) {
+            font-size: 40px;
+        }
+
+        @include media(w768) {
+            font-size: 30px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 1em;
+    }
+
+    &__subtitle {
+        margin-bottom: 50px;
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto 150px;
+        width: 100%;
+
+        @include media(w768) {
+            
+        }
+    }
+
+    &__buttons-link {
+        color: white;
+        font-size: 30px;
+        margin-left: 60px;
+
+        @include media(w768) {
+            font-size: 20px;
+            margin-left: 0;
+            margin-top: 20px;
+        }
+    }
+
+    &__btn {
+        justify-content: center;
+    }
+
+    .footer {
+        background-color: transparent;
+        color: white;
+    }
+
+    .footer__link {
+        color: white;
+
+        &:hover  {
+            color: rgba(255,255,255,0.8);
+        }
+        
+        &_getcall {
+            border-color: white;
+        }
+    }
+
+    .footer__item_contacts {
+        display: none;
+    }
+
+    .footer__item_info {
+        display: none;
+    }
+
+    .footer__item_social {
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
+        width: 100%;
+
+        div {
+            margin-bottom: 10px;
+        }
+
+        @include media(w1024) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .footer__link_politic-mobile {
+        transform: translateX(-50%);
+        display: inline-block;
+        text-decoration: underline;
+        position: absolute;
+        left: 50%;
+
+        @include media(w1024) {
+            transform: translateX(0);
+            margin-bottom: 10px;
+            position: static;
+        }
+    }
+}

@@ -1,0 +1,160 @@
+h1, h2, h3, h4, h5, h6, p {
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 425px;
+    font-weight: 800;
+    line-height: 0.8;
+    margin-bottom: 0;
+
+    @include media(w1024) {
+        font-size: 262px;
+    }
+
+    @include media(w768) {
+        font-size: 125px;
+    }
+}
+
+h3 {
+    display: inline-block;
+    font-size: 80px;
+    font-weight: 500;
+    margin-bottom: 0;
+    position: relative;
+
+    @include media(w1024) {
+        font-size: 50px;
+    }
+
+    @include media(w768) {
+        font-size: 30px;
+    }
+
+    &:after {
+        content: "2";
+        font-size: 0.5em;
+        position: absolute;
+        top: 0;
+        left: 100%;
+    }
+}
+
+h4 {
+    font-size: 190px;
+    font-weight: 600;
+    line-height: 0.9;
+    margin-bottom: 0;
+
+    @include media(w1024) {
+        font-size: 100px;
+        margin-top: 10px;
+    }
+}
+
+.rouble {
+    font-family: "PTRoubleSans", sans-serif;
+    font-weight: 600;
+    margin: 0 5px;
+}
+
+.text {
+
+    &_xs {
+        font-size: 20px;
+
+        @include media(w1024) {
+            
+        }
+    }
+
+    &_s {
+        font-size: 25px;
+
+        @include media(w1024) {
+            font-size: 15px;
+        }
+    }
+
+    &_m {
+        font-size: 30px;
+
+        @include media(w1024) {
+            font-size: 17px;
+        }
+
+        @include media(w768) {
+            font-size: 10px;
+        }
+    }
+    
+    &_l {
+        font-size: 35px;
+
+        @include media(w1024) {
+            font-size: 21px;
+        }
+
+        @include media(w768) {
+            font-size: 10px;
+        }
+    }
+    
+    &_xl {
+        font-size: 40px;
+        
+        @include media(w1024) {
+            font-size: 25px;
+        }
+
+        @include media(w768) {
+            font-size: 21px;
+        }
+    }
+    
+    &_xxl {
+        font-size: 47px;
+
+        @include media(w1024) {
+            font-size: 28px;
+        }
+
+        @include media(w768) {
+            font-size: 25px;
+        }
+    }
+
+    
+    &_x {
+        font-size: 60px;
+
+        @include media(w1024) {
+            font-size: 34px;
+        }
+
+        @include media(w768) {
+            font-size: 21px;
+        }
+    }
+
+    &_45 {
+        font-size: 45px;
+
+        @include media(w1024) {
+            font-size: 26px;
+        }
+    }
+
+    &_49 {
+        font-size: 49px;
+
+        @include media(w1024) {
+            font-size: 30px;
+        }
+
+        @include media(w768) {
+            font-size: 25px;
+        }
+    }
+}

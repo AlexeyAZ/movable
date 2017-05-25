@@ -1,0 +1,42 @@
+.bottom-form-container {
+    background-color: $main-yellow;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 130px 60px;
+    max-width: 630px;
+
+    @include media (w768) {
+        padding: 30px 20px 30px;
+        max-width: auto;
+    }
+}
+.bottom-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+    @include media (w768) {
+        align-items: center;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    &__title {
+        margin-bottom: 40px;
+    }
+
+    &__label {
+        display: block;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    &__btn {
+        width: 100%;
+    }
+}
